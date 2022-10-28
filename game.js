@@ -22,8 +22,8 @@ bgm.addEventListener("ended",()=>{
 
 let minusLife = () => {
     lives--;
-    // console.log({ lives });
     $game.removeChild($zombie);
+    document.getElementById("life-count").innerText = lives;
     addZombie();
 };
 let lifeTimer;
@@ -60,6 +60,7 @@ function newKill(){
     killSound.currentTime = 0;
     killSound.play();
     killCount++;
+    document.getElementById("kill-count").innerText=killCount;
     addZombie();
 }
 

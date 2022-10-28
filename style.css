@@ -82,6 +82,10 @@ body {
     right: 50px;
 }
 
+.left{
+    left: 50px;
+}
+
 .zombie-image {
     position: absolute;
     bottom: -100px;
