@@ -1,0 +1,1 @@
+document.getElementById("kill-count").innerText=sessionStorage.getItem("score")
